@@ -1,0 +1,25 @@
+{
+    "name": "watchdog-server",
+    "version": "1.0.0",
+    "description": "It is a WebSocket server. ",
+    "main": "app.js",
+    "scripts": {
+        "dev": "nodemon -r dotenv/config app.js",
+        "start": "pm2 start app.js --name watchdog --node-args='-r dotenv/config'"
+    },
+    "type": "module",
+    "keywords": [
+        "Node.js",
+        "Express.js",
+        "Socket.IO"
+    ],
+    "author": "Atanu",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "mongoose": "^8.10.1",
+        "serve-index": "^1.9.1",
+        "socket.io": "^4.8.1"
+    }
+}
